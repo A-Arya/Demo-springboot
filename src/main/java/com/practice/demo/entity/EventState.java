@@ -12,7 +12,6 @@ public class EventState {
     }
 
     public Boolean getInError() {
-
         return inError;
     }
 

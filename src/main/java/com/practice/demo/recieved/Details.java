@@ -1,7 +1,4 @@
 package com.practice.demo.recieved;
-
-import com.fasterxml.jackson.annotation.JsonProperty;
-
 import java.util.List;
 
 

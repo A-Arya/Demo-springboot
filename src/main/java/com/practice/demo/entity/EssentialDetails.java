@@ -1,9 +1,5 @@
 package com.practice.demo.entity;
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 @JsonIgnoreProperties
@@ -43,23 +39,5 @@ public class EssentialDetails {
     public EventState getEventState() {
         return eventState;
     }
-    //    private ArrayList traceStages;
-//    private HashMap<String, Long> eventDetails;
-//    private HashMap<String, Boolean> eventState;
-//
-//    public EssentialDetails(){
-//        this.traceStages = new ArrayList();
-//        this.eventDetails = new HashMap<String, Long>();
-//        this.eventState = new HashMap<String, Boolean>();
-//    }
-//
-//    public void addTraceStage(String traceStage) {
-//        this.traceStages.add(traceStage);
-//    }
-//    public void addEventDetails(String key,Long value) {
-//        this.eventDetails.put(key,value);
-//    }
-//    public void addEventState(String key, Boolean value){
-//        this.eventState.put(key, value);
-//    }
+
 }
