@@ -23,7 +23,7 @@ public class WorkflowController {
 
     @GetMapping("/essentialDetails/{id}")
     public EssentialDetails getDetails(@PathVariable("id") String id){
-        String url = "https://voice-recording-workflow-manager-demo.us-west-2.test.gcotechp.expedia.com/workflow/workflowId?workflow_id="+id;
+        String url = "https://demo-link"+id;
         HttpHeaders headers = new HttpHeaders();
 
         headers.add("x-api-key", "9642af2c-f7cd-43ad-9f1c-875ced41035a");
@@ -44,7 +44,6 @@ public class WorkflowController {
         //Details response = restTemplate.getForObject(url, entity, Details.class);
 
         Details response = resp.getBody();
-        //return("HEREEEEEEE "+ response.getWorkflowId());
 
         return workflowService.getDetails(response);
     }
