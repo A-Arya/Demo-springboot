@@ -22,7 +22,7 @@ public class WorkflowController {
         String url = "https://demo-url"+id;
         HttpHeaders headers = new HttpHeaders();
 
-        headers.add("x-api-key", "9642af2c-f7cd-43ad-9f1c-875ced41035a");
+        headers.add("x-api-key", "xyz");
         HttpEntity<Object> entity = new HttpEntity<Object>(headers);
         RestTemplate restTemplate = new RestTemplate();
 
